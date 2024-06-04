@@ -1,12 +1,10 @@
 <template>
   <div class="">
-    <div class="flex bg-primary h-svh">
+    <div class="flex bg-primary">
       <div class="flex justify-center items-center w-1/2">
+        <div class="w-[70%]"><LoginAnimation /></div>
         <div class="">
-          <div class="flex items-center justify-center">
-            <img src="/src/assets/logo.png" alt="" class="" />
-          </div>
-          <div><logo class="h-[480px]" /></div>
+          <div class="flex items-center justify-center"></div>
         </div>
       </div>
       <div class="h-screen w-1/2">
@@ -15,7 +13,7 @@
             <div
               class="mb-10 font-semibold text-primary cursor-pointer text-xl"
             >
-              Login
+              <span class="text-primary">Login</span> to your account
             </div>
 
             <div class="pl-7 pr-7">
@@ -60,15 +58,12 @@
 
               <router-link class="" to="/">
                 <div class="text-start text-sm font-medium text-primary">
-                  Forgot Password? <span
-                    class="hover:underline text-blue-500 cursor-pointer"
-                  >
+                  Forgot Password?
+                  <span class="hover:underline text-blue-500 cursor-pointer">
                     Click Here</span
                   >
-                  
                 </div>
               </router-link>
-             
 
               <button
                 class="w-full h-12 bg-primary mt-16 text-white rounded-lg font-semibold mb-2 hover:bg-white hover:text-primary hover:border-primary border-primary border-2 transition duration-300"
@@ -80,11 +75,9 @@
 
               <router-link class="" to="/registerPage">
                 <div class="text-center text-sm font-medium text-primary">
-                  No account yet? <span
-                    class="hover:underline text-blue-500 cursor-pointer"
-                  >
+                  No account yet?
+                  <span class="hover:underline text-blue-500 cursor-pointer">
                     Register</span
-                  
                   >
                 </div>
               </router-link>
@@ -96,7 +89,9 @@
   </div>
 </template>
 <script setup>
-import logo from "/src/assets/voting-amico.svg";
+// import logo from "/src/assets/voting-amico.svg";
+import LoginAnimation from "../components/LoginAnimation.vue";
+
 import {
   UserIcon,
   LockClosedIcon,
